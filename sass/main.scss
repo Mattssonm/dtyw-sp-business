@@ -1,0 +1,18 @@
+@import "./abstracts/variables";
+
+@import "./base/base";
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./components/section-header";
+@import "./components/icon";
+@import "./components/btn";
+
+@import "./layout/course";
+@import "./layout/content";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/about";
+@import "./layout/introduction";
+@import "./layout/offer";
+@import "./layout/presentation";

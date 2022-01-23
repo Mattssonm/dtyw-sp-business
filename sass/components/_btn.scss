@@ -1,0 +1,29 @@
+.btn {
+	display: block;
+	cursor: pointer;
+	background-color: $color-secondary-dark;
+	color: $color-secondary-light;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	margin: 2rem auto;
+	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: $color-secondary;
+		transform: translateY(-3px);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+		color: $color-black;
+	}
+
+	&:active {
+		transform: translateY(2px);
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.btn {
+		margin: 4rem auto;
+		padding: 1.5rem 3rem;
+	}
+}

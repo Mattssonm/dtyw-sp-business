@@ -1,0 +1,52 @@
+.presentation {
+	margin-bottom: 6rem;
+	max-width: 100%;
+	overflow: hidden;
+
+	&__content {
+		margin-top: 3rem;
+	}
+
+	&__section {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__image {
+		width: 100%;
+		max-width: 35rem;
+		height: auto;
+		border-radius: 50%;
+		padding: 3rem;
+		margin: 0 auto;
+		object-fit: cover;
+	}
+
+	&__text {
+		margin-bottom: 1rem;
+		padding: 0 1rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.presentation {
+		margin-bottom: 10rem;
+
+		&__content {
+			max-width: 1400px;
+			margin: 0 auto;
+			margin-top: 10rem;
+			padding: 0 3rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__section {
+			width: auto;
+		}
+	}
+}

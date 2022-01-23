@@ -1,0 +1,18 @@
+{
+	"name": "dtyw-sales-page",
+	"version": "1.0.0",
+	"description": "Landing page for Do Things Your Way",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "node-sass sass/main.scss styles.css --watch"
+	},
+	"author": "Matilda Mared",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.37.5"
+	},
+	"dependencies": {
+		"node-sass": "^6.0.1"
+	}
+}

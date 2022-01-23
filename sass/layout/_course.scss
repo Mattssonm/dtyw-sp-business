@@ -1,0 +1,29 @@
+.course {
+	margin-bottom: 6rem;
+	max-width: 100%;
+	overflow: hidden;
+
+	&__section {
+		margin-bottom: 3rem;
+
+		> * {
+			padding: 0 1rem;
+		}
+	}
+
+	&__divider {
+		max-width: 15rem;
+		height: 2px;
+		background-color: $color-primary;
+		margin: 1.5rem auto;
+		opacity: 0.5;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.course {
+		&__content {
+			margin: 8rem 0;
+		}
+	}
+}

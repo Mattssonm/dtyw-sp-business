@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700;800;900&display=swap");
+
+* {
+	font-family: $font-primary;
+	line-height: 1.5;
+}
+
+strong {
+	font-weight: bold;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $color-black;
+}
+
+p,
+li,
+a {
+	font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1300px) {
+	p,
+	li,
+	a {
+		font-size: 1.4rem;
+	}
+}
+
+.heading {
+	&__primary,
+	&__secondary,
+	&__tertiary {
+		text-align: center;
+		font-weight: 800;
+		width: 100%;
+		max-width: 50rem;
+		margin: 0 auto;
+	}
+
+	&__primary {
+		font-size: 3rem;
+		position: relative;
+		font-family: $font-secondary;
+
+		&::before {
+			content: "";
+			width: 4rem;
+			height: 2px;
+			background-color: $color-primary;
+			opacity: 0.5;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: -0.5rem;
+		}
+		&::after {
+			content: "";
+			width: 4rem;
+			height: 2px;
+			background-color: $color-primary;
+			opacity: 0.5;
+			position: absolute;
+			bottom: -0.5rem;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__secondary {
+		color: #557e73;
+		text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		margin-top: 4rem;
+	}
+
+	&__tertiary {
+		font-family: $font-secondary;
+		color: $color-primary-dark;
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		margin-top: 3rem;
+	}
+
+	&__primary--light,
+	&__secondary--light,
+	&__tertiary--light {
+		color: $color-primary-light;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.heading {
+		&__primary {
+			font-size: 4.5rem;
+			max-width: 70rem;
+		}
+
+		&__secondary {
+			font-size: 2.5rem;
+			max-width: 100%;
+		}
+
+		&__tertiary {
+			font-size: 1.8rem;
+			padding-bottom: 1.5rem;
+		}
+	}
+}

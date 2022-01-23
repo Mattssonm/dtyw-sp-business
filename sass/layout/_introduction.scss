@@ -1,0 +1,34 @@
+.introduction {
+	margin: 6rem 0 6rem 0;
+	padding: 0 1rem;
+	max-width: 100%;
+	overflow: hidden;
+
+	&__divider {
+		max-width: 15rem;
+		height: 2px;
+		background-color: $color-primary;
+		margin: 2rem auto;
+		opacity: 0.5;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.introduction {
+		margin: 6rem 3rem;
+
+		&__content {
+			margin: 0 auto;
+			max-width: 1400px;
+			display: flex;
+		}
+
+		&__section:first-of-type {
+			margin-right: 6rem;
+		}
+
+		&__divider {
+			display: none;
+		}
+	}
+}
